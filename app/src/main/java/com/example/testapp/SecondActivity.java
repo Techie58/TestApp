@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent getTxt=getIntent();
         String text=getTxt.getStringExtra("TEXT");
         binding.secondText.setText(text);
+        binding.backBtn.setOnClickListener(view -> onBackPressed());
 
     }
 }
